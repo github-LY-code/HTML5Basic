@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-item</title>
+    <style>
+        .box {
+            display: flex;
+            max-width: 450px;
+            min-width: 260px;
+            height: 90px;
+            margin: 10px 0;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .box div {
+            margin: 5px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+        }
+        .box .d2 {
+            padding-top: 20px;
+        }
+
+        .box .d3 {
+            padding-top: 30px;
+        }
+
+        #box1 {
+            align-items: flex-start;
+        }
+
+        #box2 {
+            align-items: flex-end;
+        }
+
+        #box3 {
+            align-items: center;
+        }
+
+        #box4 {
+            align-items: baseline;
+        }
+
+        #box5 {
+            align-items: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>flex-start</h2>
+    <div class="box" id="box1">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="box" id="box2">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+    <h2>center</h2>
+    <div class="box" id="box3">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+    <h2>baseline</h2>
+    <div class="box" id="box4">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+    <h2>stretch</h2>
+    <div class="box" id="box5">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+</body>
+
+</html>

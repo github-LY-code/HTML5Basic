@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3边框属性</title>
+    <style>
+        #radius, #shadow, #shadow-inset {
+            width: 200px;height: 20px;
+            margin-bottom: 10px;
+            background: #AAAAAA;
+        }
+        #radius {border-radius: 0.5rem;}
+        #shadow {
+            -webkit-box-shadow:5px 5px rgba(0,0,0,0.8);
+            box-shadow: 5px 5px rgba(0,0,0,0.8);
+        }
+        #shadow-inset {
+            -webkit-box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+            box-shadow: inset 0px 0px 20px 5px rgba(0, 0, 0, 0.8);
+        }
+        #border-image-1,#border-image-2 {
+            width: 81px;height: 81px;
+            margin-bottom: 10px;
+        }
+        #border-image-1 {
+            -webkit-border-image: url("../images/border-image.png") 27 27 27 27 /14px stretch;
+            -o-border-image: url("../images/border-image.png") 27 27 27 27 /14px stretch;
+            border-image: url("../images/border-image.png") 27 27 27 27 /14px stretch;
+        }
+        #border-image-2 {
+            border-image: url("../images/border-image.png") 27 27 27 27 /27px stretch;
+        }
+        #border-image-3,#border-image-4 {
+            width: 200px;height: 60px;
+            margin-bottom: 10px;
+            border-image-width: 20px;
+        }
+        #border-image-3 {
+            -webkit-border-image: url("../images/background-image.jpg") 20 20 20 20 stretch;
+            -o-border-image: url("../images/background-image.jpg") 20 20 20 20 stretch;
+            border-image: url("../images/background-image.jpg") 20 20 20 20 fill stretch;
+        }
+        #border-image-4 {
+            border-image: url("../images/background-image.jpg") 20 20 20 20 /20px stretch;
+        }
+    </style>
+</head>
+<body>
+    <div id="radius"></div>
+    <div id="shadow"></div>
+    <div id="shadow-inset"></div>
+    <div id="border-image-1"></div>
+    <div id="border-image-2"></div>
+    <div id="border-image-3">有fill值</div>
+    <div id="border-image-4">无fill值</div>
+</body>
+</html>

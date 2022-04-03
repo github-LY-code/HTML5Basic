@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(name) {
+            this.name = name;
+            this.greet = function() {
+                return '你好，我是'+this.name+'。';
+            };
+        }
+
+        var person = new Person('Bro');
+
+        //扩展方法
+        Person.prototype.bye = function() {
+            return '我是'+this.name+'，跟大家拜拜了';
+        }
+
+        // 扩展属性
+        Person.prototype.age = 20;
+
+        document.write(person.greet()+'今年'+person.age+'岁。<br/>');
+        document.write(person.bye());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

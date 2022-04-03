@@ -1,0 +1,9 @@
+button{
+    font-family:"微软雅黑", "sans-serif";
+    color: rgba(185, 57, 67, 0.842);
+    font-size: 1.2rem;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 200, 0.6);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 200, 0.4);
+}

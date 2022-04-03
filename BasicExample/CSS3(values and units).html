@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS属性值与单位</title>
+    <style>
+        div{width: 130px; height: 40;border: solid gold;margin-top: 10px;}
+        #div1{color: #0000ff;background-color: rgba(0, 0, 0, 0.2);}
+        #div2{background-color: hsla(120, 50%, 50%, 0.5);}
+        #div3{width: 10ch;overflow: hidden;}
+        #div4{
+            -webkit-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+            background-color: #BBBBBB;
+        }
+        #p1{
+            position: absolute;overflow: hidden;width: 100px;border: 1px solid;
+            -webkit-transition-property: width;
+            -o-transition-property: width;
+            transition-property: width;
+            -webkit-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+            -webkit-transition-timing-function: ease-in;
+            -o-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+        }
+        #p1:hover{width: 10px;}
+    </style>
+</head>
+<body>
+    <div id="div1">CSS3颜色值与单位</div>
+    <div id="div2">CSS3颜色值与单位</div>
+    <div id="div3">000000000000AA</div>
+    <div id="div4">CSS3角度值与单位</div>
+    <p id="p1">CSS3时间值与单位，1s内宽度变小</p>
+</body>
+</html>

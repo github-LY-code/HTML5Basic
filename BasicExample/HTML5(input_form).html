@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单重写属性</title>
+</head>
+<body>
+    <form action="HTML5(form_action).html" method="get">
+        <label>姓名<input type="text" name="name" id="name"></label><br>
+        <label>单位<input type="text" name="unit" id="unit" autocomplete="off"></label><br>
+        <label>Email<input type="text" name="email" id="email" itemid="email"></label><br>
+        <label><input type="submit" value="提交"></label>
+        <label><input type="submit" formaction="HTML5(form_action)admin.html" formmethod="POST" 
+        value="向管理员提交"></label><br>
+    </form>
+</body>
+</html>

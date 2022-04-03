@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css属性选择器</title>
+    <style>
+        h2~ul{border: dashed 3px red;}
+        [title^="attr"]{border: solid 3px orange;}
+        [title$="p"]{font-weight: 900;}
+        [title*="sub"]{font-style: italic;}
+    </style>
+</head>
+<body>
+    <h2>CSS3增加的选择器</h2>
+    <ul>
+        <li>css3选择器</li>
+        <li>css3选择器</li>
+    </ul>
+    <h2>css属性选择器</h2>
+    <p title="attrp">css属性选择器</p>
+    <p title="attrp">css属性选择器</p>
+    <p title="subp1">css属性选择器</p>
+    <p title="subp2">css属性选择器</p>
+    <ul>
+        <li>css3选择器</li>
+        <li>css3选择器</li>
+    </ul>
+</body>
+</html>

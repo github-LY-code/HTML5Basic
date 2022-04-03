@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色渐变图像</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000000;
+            margin-bottom: 10px;
+        }
+        #div1{background: -webkit-radial-gradient(100px, #f00,#ff0);}
+        #div2{background: -webkit-gradient(linear, left top, left bottom,from(#f00)
+            ,color-stop(#ff0),to(#f00));
+            background: -webkit-linear-gradient(#f00,#ff0,#f00);}
+        ol{list-style-image: -webkit-gradient(linear, left top, left bottom,from(#f00)
+            ,color-stop(#ff0),to(#f00));
+            list-style-image: -webkit-linear-gradient(#f00,#ff0,#f00);
+            } 
+    </style>
+</head>
+<body>
+    <div id="div1">颜色圆形渐变图像</div>
+    <div id="div2">颜色线性渐变图像</div>
+    <ol>
+        <li>列表项标记使用颜色线性渐变图像</li>
+        <li>列表项标记使用颜色线性渐变图像</li>
+        <li>列表项标记使用颜色线性渐变图像</li>
+    </ol>
+</body>
+</html>

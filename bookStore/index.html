@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<!--这是一条注释-->
+	<title>叮叮书店</title>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width = device-width, initial - scale = 1.0">
+	<meta name="keywords" content="书店，叮叮书店，图书">
+	<meta name="description" content="叮叮书店是一个销售书籍的网上书店">
+	<meta name="robots" content="index,follow">
+</head>
+
+<body>
+	<!--页眉-->
+	<header class="container">
+		<!--网站logo-->
+		<div id="logo">
+			<a href="index.html">
+				<h1>叮叮书店</h1>
+			</a>
+		</div>
+		<!--站内搜索-->
+		<div id="search">
+			<form action="index.html" method="get">
+				<label><input type="search" placeholder="站内搜索"><input type="submit" value="搜索"></label>
+			</form>
+		</div>
+	</header>
+	<!--导航菜单-->
+	<div id="nav">
+		<nav class="container">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="category.html">书籍分类</a></li>
+				<li><a href="specials.html">特刊降价</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="about.html">关于我们</a></li>
+			</ul>
+			<!--购物车-->
+			<div id="cart"><a href="cart.html">购物车</a></div>
+		</nav>
+	</div>
+	<!--内容-->
+	<div id="content-wrapper" class="container">
+		<!--左边内容-->
+		<main>
+			<!--横幅广告-->
+			<div id="adv"></div>
+			<!--本周推荐-->
+			<section id="recommend">
+				<h2>本周推荐</h2>
+				<section class="recommend-book">
+					<h3>《HTML5权威指南》</h3>
+					<div class="content">
+						<div class="cover">
+							<a href="#"><img src="images/prod2.jpg" alt="HTML5权威指南"></a>
+						</div>
+						<div class="description">
+							<p>HTML5 权威指南》是系统学习网页设计的权威参考图书。<wbr>本书分为五部分：第一部分介绍学习本书的预备知识和HTML、CSS 和JavaScript的最新进展；第二部分讨论HTML 元素，并详细说明了HTML5中新增和修改的元素；第三部分阐述CSS，涵盖了所有控制内容样式的CSS 选择器和属性，并辅以大量代码示例和图示；第四部分介绍DOM，剖析如何用JavaScript 操纵HTML 内容；第五部分讲解Ajax、多媒体和canvas 元素等HTML5高级特性。
+							</p>
+						</div>
+					</div>
+					<div class="cart-more">
+						<a class="cart" href="cart.html">加入购物车</a>
+						<a class="more" href="details.html">详细内容</a>
+					</div>
+				</section>
+				<section class="recommend-book">
+					<h3>《JavaScript权威指南》</h3>
+					<div class="content">
+						<div class="cover">
+							<a href="#"><img src="images/prod3.jpg" alt="JavaScript权威指南"></a>
+						</div>
+						<div class="description">
+							<p><wbr>本书是程序员学习核心JavaScript语言和由Web浏览器定义的JavaScript API的指南和综合参考手册。第6版涵盖HTML 5和ECMAScript 5。很多章节完全重写，以便与时俱进，紧跟当今的最佳Web开发实践。本书新增章节描述了jQuery和服务器端JavaScript。本书适合那些希望学习Web编程语言的初、中级程序员和希望精通JavaScript的JavaScript程序员阅读
+							</p>
+						</div>
+					</div>
+					<div class="cart-more">
+						<a class="cart" href="cart.html">加入购物车</a>
+						<a class="more" href="details.html">详细内容</a>
+					</div>
+				</section>
+			</section>
+			<!--最近新书-->
+			<section id="new">
+				<h2>最新图书</h2>
+				<div class="content">
+					<section class="book">
+						<h3>《HTML5+CSS3从入门到精通》</h3>
+						<div class="effect-1">
+							<div class="image-box">
+								<a href="#"><img src="images/prod4.jpg" alt="HTML5+CSS3从入门到精通"></a>
+							</div>
+							<div class="text-desc">
+								<h3>《HTML5+CSS3从入门到精通》</h3>
+								<p><wbr>HTML5+CSS3从入门到精通是通过基础知识+中小实例+综合案例的方式，讲述了用HTML5+ CSS3设计构建网站的必备知识，相对于专业指南、高级程序设计、开发指南同类图书，本书是一本适合快速入手的自学教程。内容有：创建HTML5文档，实战HTML5表单，实战HTML5绘画，HTML5音频与视频，Web存储，离线应用，Workers多线程处理，Geolocation地理位置等技术。CSS3部分主要介绍了CSS3概述，CSS选择器，文本、字体与颜色，背景和边框，2D变形，设计动画，网页布局、用户界面以及CSS3的其他新特性。
+								</p>
+								<div class="cart-more">
+									<a class="cart" href="cart.html">加入购物车</a>
+									<a class="more" href="details.html">详细内容</a>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="book">
+						<h3>《响应式Web设计》</h3>
+						<div class="effect-1">
+							<div class="image-box">
+								<a href="#"><img src="images/prod5.jpg" alt="响应式Web设计"></a>
+							</div>
+							<div class="text-desc">
+								<h3>《响应式Web设计》</h3>
+								<p><wbr>响应式网站设计(Responsive Web design)的理念是：页面的设计与开发应当根据用户行为以及设
+                  备环境(系统平台、屏幕尺寸、屏幕定向等)进行相应的响应和调整。具体的实践方式由多方面组成，包括弹性
+                  网格和布局、图片、CSS media query的使用等。无论用户正在使用笔记本还是iPad，我们的页面都应该能够
+                  自动切换分辨率、图片尺寸及相关脚本功能等，以适应不同设备；换句话说，页面应该有能力去自动响应用户
+                  的设备环境。响应式网页设计就是一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。这样，
+                  我们就可以不必为不断到来的新设备做专门的版本设计和开发了。</p>
+								<div class="cart-more">
+									<a class="cart" href="cart.html">加入购物车</a>
+									<a class="more" href="details.html">详细内容</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+			<!--最近促销-->
+			<section id="sales">
+				<h2>最近促销</h2>
+				<div class="content">
+					<section class="book">
+						<h3>《HTML5 和 CSS3 实列教程》</h3>
+						<div class="effect-1">
+							<div class="image-box">
+								<a href="#"><img src="images/prod1.jpg" alt="HTML5 和 CSS3 实列教程"></a>
+							</div>
+							<div class="text-desc">
+								<img src="images/sale.jpg" alt="">
+							</div>
+							<div class="cart-more">
+								<a class="cart" href="cart.html">加入购物车</a>
+								<a class="more" href="details.html">详细内容</a>
+							</div>
+						</div>
+					</section>
+					<section class="book">
+						<h3>《JavaScript 权威指南》</h3>
+						<div class="effect-1">
+							<div class="image-box">
+								<a href="#"><img src="images/prod3.jpg" alt="JavaScript 权威指南"></a>
+							</div>
+							<div class="text-desc">
+								<img src="images/sale.jpg" alt="">
+							</div>
+							<div class="cart-more">
+								<a class="cart" href="cart.html">加入购物车</a>
+								<a class="more" href="details.html">详细内容</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</section>
+		</main>
+		<!--右边栏区-->
+		<aside>
+			<!--栏边广告-->
+			<div id="advert">
+				<a href="#"><img src="images/ad1.jpg" alt="广告"></a>
+				<a href="#"><img src="images/ad2.jpg" alt="广告"></a>
+				<a href="#"><img src="images/ad3.jpg" alt="广告"></a>
+			</div>
+			<!--畅销图书-->
+			<section id="best-selling">
+				<h2>畅销图书</h2>
+				<ul>
+					<li><a class="selling" href="#">深度学习【deep learning】</a>
+						<div class="curr">
+							<div class="p-img">
+								<a title="深度学习【deep learning】" href="#"><img src="images/selling1.jpg" alt="封面"></a>
+							</div>
+							<div class="p-name"><a title="深度学习【deep learning】" href="#">深度学习【deep learning】</a>
+								<strong>￥43.5</strong>
+								<del><strong>￥52.00</strong></del>
+							</div>
+						</div>
+					</li>
+					<li><a class="selling" href="#">Hadoop 权威指南：大数据的存储分析（第四版），累计销量超10万</a>
+						<div class="curr">
+							<div class="p-img">
+								<a title="Hadoop 权威指南：大数据的存储分析（第四版）" href="#"><img src="images/selling2.jpg"
+										alt="封面"></a>
+							</div>
+							<div class="p-name"><a title="Hadoop 权威指南：大数据的存储分析（第四版）" href="#">Hadoop
+									权威指南：大数据的存储分析（第四版）</a><strong>￥43.5</strong>
+								<del><strong>￥52.00</strong></del>
+							</div>
+						</div>
+					</li>
+					<li><a class="selling" href="#">和秋叶一起学 PPT 第3版</a>
+						<div class="curr">
+							<div class="p-img">
+								<a title="和秋叶一起学 PPT 第3版" href="#"><img src="images/selling3.jpg" alt="封面"></a>
+							</div>
+							<div class="p-name"><a title="和秋叶一起学 PPT 第3版" href="#">和秋叶一起学 PPT
+									第3版</a><strong>￥43.5</strong>
+								<del><strong>￥52.00</strong></del>
+							</div>
+						</div>
+					</li>
+					<li><a class="selling" href="#">深度学习优化与识别</a>
+						<div class="curr">
+							<div class="p-img">
+								<a title="深度学习优化与识别" href="#"><img src="images/selling4.jpg" alt="封面"></a>
+							</div>
+							<div class="p-name"><a title="深度学习优化与识别" href="#">深度学习优化与识别</a><strong>￥43.5</strong>
+								<del><strong>￥52.00</strong></del>
+							</div>
+						</div>
+					</li>
+					<li><a class="selling" href="#">区块链原理、设计与应用</a>
+						<div class="curr">
+							<div class="p-img">
+								<a title="区块链原理、设计与应用" href="#"><img src="images/selling5.jpg" alt="封面"></a>
+							</div>
+							<div class="p-name"><a title="区块链原理、设计与应用" href="#">区块链原理、设计与应用</a><strong>￥43.5</strong>
+								<del><strong>￥52.00</strong></del>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<div id="classify-partner">
+				<!--图书分类-->
+				<section id="classify">
+					<h2>图书分类</h2>
+					<ul>
+						<li><a href="category.html">编程语言</a></li>
+						<li><a href="category.html">数据库</a></li>
+						<li><a href="category.html">图形图像</a></li>
+						<li><a href="category.html">网页制作</a></li>
+						<li><a href="category.html">考试认证</a></li>
+					</ul>
+				</section>
+				<!--合作伙伴-->
+				<section id="partner">
+					<h2>合作伙伴</h2>
+					<ul>
+						<li><a href="#">中国电子商务研究中心</a></li>
+						<li><a href="#">清华大学出版社</a></li>
+						<li><a href="#">中国人民大学出版社</a></li>
+						<li><a href="#">中国社会科学出版社</a></li>
+					</ul>
+			</div>
+			</section>
+			<!--关于书店-->
+			<section id="about">
+				<h2>关于书店</h2>
+				<div class="content">
+					<img src="images/about.gif" alt="叮叮书店">
+					<p>书店介绍......</p>
+				</div>
+			</section>
+		</aside>
+	</div>
+	<!--页脚-->
+	<div id="footer-wrapper">
+		<!--页脚导航-->
+		<footer class="container">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="#">服务条款</a></li>
+				<li><a href="#">隐私策略</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+			</ul>
+		</footer>
+	</div>
+	<!--版权信息-->
+	<div id="copyright" class="container">
+		<div>Copyright (c) <a href="index.html">叮叮书店</a> 2016-2018，All Rights Reserved | 京 ICP 证000001号音象制品许可证</div>
+		<address>通讯地址：清华大学学研大厦A座 读者服务部&nbsp;&nbsp;电话：（010）62781733&nbsp;&nbsp;网关信箱：netadmin@tup.tsinghua.edu.cn
+		</address>
+	</div>
+</body>
+
+</html>

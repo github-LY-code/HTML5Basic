@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clear清除浮动</title>
+    <style>
+        span {
+            width: 110px; height: 50px;
+        }
+        #span1 {
+            float: left;
+            border: 3px solid red;
+        }
+        #span2 {
+            float: right; clear: left;
+            border: 3px solid green;
+        }
+        #span3 {
+            float: left; clear: left;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <span id="span1">span1元素浮动</span>
+    <span id="span2">span2元素浮动</span>
+    <span id="span3">span3元素浮动</span>
+</body>
+</html>

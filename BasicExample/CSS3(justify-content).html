@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3伸缩盒justify-content属性</title>
+    <style>
+        .box {
+            display: flex;
+            max-width: 450px;
+            min-width: 260px;
+            height: 50px;
+            margin: 10px 0;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        .box div {
+            margin: 5px; padding: 10px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 5px;
+        }
+
+        #box1 {
+            justify-content: flex-start;
+        }
+        #box2 {
+            justify-content: flex-end;
+        }
+        #box3 {
+            justify-content: center;
+        }
+        #box4 {
+            justify-content: space-between;
+        }
+        #box5 {
+            justify-content: space-around;
+        }
+        #box6 {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>flex-start</h2>
+    <div class="box" id="box1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>flex-end</h2>
+    <div class="box" id="box2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>center</h2>
+    <div class="box" id="box3">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>space-between</h2>
+    <div class="box" id="box4">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>space-around</h2>
+    <div class="box" id="box5">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h2>space-evenly</h2>
+    <div class="box" id="box6">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

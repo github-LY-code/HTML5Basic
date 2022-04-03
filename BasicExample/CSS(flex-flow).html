@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伸缩盒flex-flow属性</title>
+    <style>
+        .article {
+            display: flex;
+            width: 100%; max-width: 450px; min-width: 260px;
+            margin: 10px auto;
+            height: 100px;
+        }
+        .nav {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        .section {
+            background-color:rgba(0,0,0,0.3);
+        }
+        .aside {
+            background-color:rgba(0, 0, 0, 0.2);
+        }
+        #article1 {
+            flex-flow: row-reverse;
+        }
+        #article2 {
+            flex-flow: row wrap;
+        }
+        #nav2 {
+            flex: 1 1 260px;
+        }
+        #section2 {
+            flex: 1 1 260px;
+        }
+        #aside2 {
+            flex: 1 1 260px;
+        }
+    </style>
+</head>
+<body>
+    <article class="article" id="article1">
+        <nav class="nav" id="nav1">导航</nav>
+        <section class="section" id="section1">内容</section>
+        <aside class="aside" id="aside1">边栏</aside>
+    </article>
+    <article class="article" id="article2">
+        <nav class="nav" id="nav2">导航</nav>
+        <section class="section" id="section2">内容</section>
+        <aside class="aside" id="aside2">边栏</aside>
+    </article>
+</body>
+</html>

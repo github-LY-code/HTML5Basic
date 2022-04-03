@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css属性选择器</title>
+    <style>
+        [title]{color: green;}
+        [title="attrselector"]{border: solid 3px orange;}
+        [title~="selector"]{font-weight: 900;}
+        [title|="attr"]{font-style: italic;}
+    </style>
+</head>
+<body>
+    <h2>css属性选择器</h2>
+    <p title="attrselector">css属性选择器</p>
+    <p title="attr selector">css属性选择器</p>
+    <p title="attr-selector">css属性选择器</p>
+</body>
+</html>

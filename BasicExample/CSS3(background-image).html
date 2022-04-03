@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px; height: 100px;
+            border: 10px dotted red;
+            padding: 40px; margin-bottom: 10px;
+        }
+        .div1 {
+            background: url('../images/border-image.png') bottom 20px right 20px no-repeat content-box,url(../images/background-image-1.jpg) top 0px left 0px content-box #b4b4b4;
+            opacity: 0.5;
+        }
+        .div2 {
+            background: url('../images/border-image.png') content-box,url(../images/background-image-1.jpg) content-box #b4b4b4;
+        }
+        .div3{
+            background: url(../images/background-image-1.jpg) no-repeat #b4b4b4;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">多个背景图像</div>
+    <div class="div2">背景图像向外裁剪</div>
+    <div class="div3">背景图像等比收缩</div>
+</body>
+</html>

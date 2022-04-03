@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onerror = handlErr;
+        function handlErr(msg, url, line) {
+            var str= '这个页面有一个错误！\n';
+            str += '错误是：'+msg+'\n';
+            str += 'URL:' + decodeURI(url) + '\n';
+            str += '行:' + line + '\n';
+            str += '单机确定以继续';
+            alert(str);
+            return true;
+        }
+    addlert("HI");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

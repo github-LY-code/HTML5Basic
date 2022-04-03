@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3盒模型大小</title>
+    <style>
+        div{width:200px; height: 100px; padding: 10px; border: 10px solid #999999; }
+        #box1 {
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+            background: #EEE;
+        }
+        #box2 {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            background: #EEE;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">这个盒子大小为240px*140px，内容为200px*100px。</div>
+    <div id="box2">这个盒子大小为200px*100px，内容为160px*60px。</div>
+</body>
+</html>

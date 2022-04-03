@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>包含元素</title>
+    <style>
+        .contains1, .contains2, .contains3 {
+            width: 380px; height: 120px;
+            border: 1px solid #666;
+        }
+        .contains2 {
+            position: absolute; 
+            left: 120px; top: 60px; 
+            background-color: #f08080;
+        }
+        .contains3 {
+            float: left;
+            background-color: #d2b48c;
+        }
+        .contains2 div {
+            color: #993399;
+            border: solid 1px #f00;
+        }
+        #sub-div1 {
+            width: 80px; height: 80px;
+            background-color: #fef68f;
+            position: absolute;
+            right: 10px; bottom: 10px;
+        }
+        #sub-div2 {
+            width: 80px; height: 80px;
+            float: left;
+            background-color: #dda0dd;
+        }
+        #sub-div3 {
+            width: 80px; height: 80px;
+            background-color: #ccff66;
+        }
+    </style>
+</head>
+<body>
+    <div class="contains1">流动元素</div>
+    <div class="contains2">绝对定位元素
+        <div id="sub-div1">子元素1-绝对定位</div>
+        <div id="sub-div2">子元素2-浮动</div>
+        <div id="sub-div3">子元素3-流动</div>
+    </div>
+    <div class="contains3">浮动元素</div>
+</body>
+</html>

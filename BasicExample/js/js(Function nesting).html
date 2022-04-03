@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嵌套</title>
+</head>
+<body>
+    <script>
+        function fnSum(n) {
+            var ans = 0;
+            for (var iCv = 1;iCv <= n;iCv++) {
+                ans += iCv;
+            }
+            return ans;
+        }
+
+        function fnAll(n) {
+            var ans = 0;
+            for (var iCv = 1;iCv <= n;iCv++) {
+                ans += fnSum(iCv);
+            }
+            return ans;
+        }
+        document.write(fnAll(2));
+    </script>
+</body>
+</html>

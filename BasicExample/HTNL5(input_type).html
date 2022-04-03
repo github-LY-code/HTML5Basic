@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputy的type属性</title>
+</head>
+<body>
+    <form action="HTML5(form_action).html" method="get">
+        <label for="name">text 姓名</label><input type="text" name="name" id="name"><br>
+        <label>password 密码</label><input type="password" name="password" id="password"><br>
+        <label>radio 性别</label>
+        <label for="nan"><input type="radio" name="sex" value="男" id="nan">男</label>
+        <label for="nv"><input type="radio" name="sex" value="女" id="nv">女</label><br>
+        <label>checkbox 爱好</label>
+        <label><input type="checkbox" name="interest" value="计算机">计算机</label>
+        <label><input type="checkbox" name="interest" value="户外">户外</label>
+        <label><input type="checkbox" name="interest" value="文学">文学</label><br>
+        <label>hidden <input type="hidden" name="country" value="中国"</label><br>
+        <label>file 文件<input type="file" name="file"><input type="file" name="pic" id="pic" accept="image/gif,image/jpeg"></label><br>
+        <label>email 电子邮件<input type="email"></label><br>
+        <label>url 网址<input type="url"></label><br>
+        <label>number 数值<input type="number" max="30" min="1" value="1"></label><br>
+        <label>date 日期<input type="date" max="2050-01-01" min="2021-07-21" value="2021-07-21"></label><br>
+        <label>range 范围<input type="range" value="50"></label><br>
+        <label>search 关键字<input type="search" value="HTML5"></label><br>
+        <label>image 图像按钮<input type="image" src="../images/w3c_home.png" alt="图像按钮" title="提交"
+        name="image"></label><br>
+        <label>button普通按钮<input type="button" value="单击我" onclick="alert('为什么？')" name=
+        "button"></button></label><br>
+        <label class="title">reset 重置<input type="reset" name="reset"></label><br>
+        <label class="title">submit 提交按钮<input type="submit" name="submit"</label><br>
+    </form>
+</body>
+</html>
